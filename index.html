@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect to Tony Liu Cloud</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
+    }
 
+    .container {
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: #fff;
+      background: #6c63ff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #5146d8;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome!</h1>
+    <p>Click the button below to go to tonyliu.cloud.</p>
+    <button onclick="redirectToSite()">Go to TonyLiu.cloud</button>
+  </div>
+
+  <script>
+    function redirectToSite() {
+      window.location.href = "https://tonyliu.cloud";
+    }
+  </script>
+</body>
+</html>
