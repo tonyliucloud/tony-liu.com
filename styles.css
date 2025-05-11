@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a0f1a;
+  color: #e0e6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  cursor: none;
+}
+
+.container {
+  max-width: 90%;
+  width: 400px;
+  padding: 2em;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  color: #a0a7b3;
+}
+
+.message {
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+  color: #b0b8c1;
+}
+
+.redirect-btn {
+  padding: 1em 2em;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #61dafb;
+  color: #0a0f1a;
+  cursor: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.redirect-btn:hover {
+  background-color: #4fa3d1;
+  transform: scale(1.05);
+}
+
+.redirect-btn:active {
+  background-color: #3b8ca6;
+}
+
+#custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 15px;
+  height: 15px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.3s, transform 0.2s;
+  z-index: 9999;
+}
+
+#custom-cursor.hovered {
+  width: 30px;
+  height: 30px;
+  background-color: #4fa3d1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
